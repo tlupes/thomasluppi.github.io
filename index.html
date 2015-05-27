@@ -356,6 +356,16 @@
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript">
     $(window).scroll(function () {
+    	if(window.innerWidth < 1300)
+    	{
+    		$('.name').css({
+		        'opacity': 1
+		    }); 
+		    $('.initals').css({
+		        'opacity': 0
+		    }); 
+		    return;
+    	}
 	    var scrollTop = $(window).scrollTop();
 	    var height = 200;
 	    var op = ((height - scrollTop) / height)
