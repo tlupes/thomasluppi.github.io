@@ -1,4 +1,22 @@
 <head>
+<title>Thomas Luppi</title>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <style type="text/css">
@@ -6,14 +24,13 @@
 		max-width: 708px;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: whitesmoke;
-		margin-top: -75px;
+		margin-top: 175px;
 	}
 	.head {
 		padding: 50px 50px 100px 50px;
 	}
 	html, body {
-		background-color: whitesmoke;
+		
 	}
 	table {
 	  border-collapse: collapse;
@@ -30,22 +47,53 @@
 	  border-bottom: none;
 	}
 
+	.backImg {
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 225;
+	}
+
 	@media only screen and (min-width: 1300px) {
 		.sidePanel {
 			position: fixed;
 			right: 0;
 			top: 262px;
 		}
+		.backImg {
+			position: fixed;
+		}
 	}
+
+	@media only screen and (max-width: 450px) {
+		.meImg {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.cards {
+			margin-top: 250px;
+		}
+		.backImg {
+			height: 300px;
+		}
+	}
+
 </style>
 </head>
 
 <body>
-	<div class="head teal lighten-2 white-text">
-	    <div class="right .hide-on-small-only">
+	<div class="head white-text backImg teal lighten-2" height="200">
+		<div class="right meImg">
 	    	<img class="circle materialboxed" src="me.jpg" width="96">
 	    </div>
-	    <h2>Thomas A. Luppi</h2>
+		<h2 class="name">Thomas A. Luppi</h2>
+	</div>
+	<div class="head white-text backImg" height="200" style="z-index: -1">
+		<h2 class="initals" style="opacity: 0">TL</h2>
 	</div>
 	<div class="cards">
 		<div class="sidePanel card">
@@ -306,4 +354,29 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+    $(window).scroll(function () {
+	    var scrollTop = $(window).scrollTop();
+	    var height = 200;
+	    var op = ((height - scrollTop) / height)
+	    if(op > 0)
+	    {
+		    $('.name').css({
+		        'opacity': op
+		    }); 
+		    $('.initals').css({
+		        'opacity': 1-op
+		    }); 
+		}
+		else
+		{
+			$('.name').css({
+		        'opacity': 0
+		    }); 
+		    $('.initals').css({
+		        'opacity': 1
+		    }); 
+		}
+	});
+    </script>
 </body>
