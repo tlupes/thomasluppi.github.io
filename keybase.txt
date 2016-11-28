@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/tluppi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://thomasluppi.com
+  * I am tluppi (https://keybase.io/tluppi) on keybase.
+  * I have a public key with fingerprint 426F 62F8 15E7 0B9F C4F5  193F EEB9 9702 23B8 E1F4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010158f4a236d233232154e8334f5dc684f02200226f28c6dc01d022823ec97757b20a",
+            "fingerprint": "426f62f815e70b9fc4f5193feeb9970223b8e1f4",
+            "host": "keybase.io",
+            "key_id": "eeb9970223b8e1f4",
+            "kid": "010158f4a236d233232154e8334f5dc684f02200226f28c6dc01d022823ec97757b20a",
+            "uid": "882f18adbe41f6e9594d4f2ac5bcd319",
+            "username": "tluppi"
+        },
+        "service": {
+            "hostname": "thomasluppi.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480296618,
+    "expire_in": 157680000,
+    "prev": "727fef5dc2e9e5bbeb320c9bcc39b61a315f98aea128da94dc4ad7f35149b446",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJrSBRRFN7VSl0SgpSCwHCEfonNvfPeRXqKgYRRkLFZy9yZOzrpzmy7
+sz5QKwhDrCiptMy3Qab+KFB6UGZi4WIF2kL6x6CERKEoLCvFuiP5r59duFzOOd/3
+3e8cznBirMPl7K4WoPfrrjHn6LOGsOOIp6a7gkKmWk65K6givPLgYhWHLF+RrlJu
+igY04ESNlSHDq5BhIAMBx2KRYViNUxVeZDUaQppcXoOiwqsKDVQSiZDBiiQInIAg
+LVPplKYbBTgYCOqGRWRZAuehJgIOCzSSNIWoAYnRMEaSJBA+g0QMNJYQC82QzSDm
+kBzCGbpJciTwrdj7B/4/+w6vyIki1IAoqwizQOOxxEmsympQVjikqAyQbGAIBw3Z
+jwnaKg4HAjpVlU6RXImuYHusdh+r9ULTL4dWQBmK6SfkQNC0TMUsJsVCywq4ba5V
+HrDBpRj5/sr4kG6oZI6EUIKDId00KDcgSMXSbV3AijSUeB6I6RQuC+hB7NNtBCfw
+Ik2O/Q0uIZICFDRsjwFiCXMIYcRAWpGQojAS4oHMAE6TRBnLAIqqTFpVWFkVNIYD
+rIRYlqfsxk4aJuXmiU25gEiG9AJDtsJBTFUNDeavcThdjnVrY+z9crgSNqxunet9
+vGNopn5g6cDN305vErf8ocnHecaP4hyF8004s2uftF7LTLm1VTgBcdv0LHqYGx5o
+GJz6xsQmL4409e3bMdeed3YhOnanr6uhtm/YGYmpm/1SaETB2PG8Q5Pnulwlqfun
+U+orYLS3xVs52f6gLu7d7McXr8r29HYMzk7ehjsjl74fnFnGDRd6ls7//JTqT7hy
+v3Hj9sHr3cf8C9pnb/zuw09Hkz1N7HrBl/Ym4W5ecSTTEcipfJ7Un51WGmlmx39l
+tXWOTOPL96LbJk7/eJvd3OpsATVx+Wcar3bUzD1ezOrJXXq05fXmtFOeqc7EoZG5
+edpdl3Sj+uXe/k0XyxP2zv8BT+RG7A==
+=KnQM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tluppi
+
+==================================================================
